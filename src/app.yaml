@@ -1,0 +1,16 @@
+application: msdi-game
+version: 1-1
+runtime: python27
+threadsafe: false
+api_version: 1
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /images
+  static_dir: images
+
+- url: /.*
+  script: startup.py
+  
